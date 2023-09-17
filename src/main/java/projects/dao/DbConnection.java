@@ -17,7 +17,7 @@ public class DbConnection {
 		String url = String.format("jdbc:mysql://%s:%d/%s?user=%s&password=%s&useSSL=false",
 				HOST, PORT, SCHEMA, USER, PASSWORD);
 		
-		System.out.print("Connecting with url=" + url);
+		System.out.print("Connecting with url... ");
 		
 		try {
 			Connection conn = DriverManager.getConnection(url);
